@@ -1,0 +1,59 @@
+/*.exemple1.block {
+    position: relative;
+}
+
+.exemple1 .textes {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.exemple1 img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 10px;
+}*/
+
+div .TITRE h5, div .TEXT ul {
+    text-align: justify;
+    font-size: 20px;
+}
+/* titre h5 et liste ul */
+
+div .TEXT {
+    text-align: justify;
+}
+/* texte des div */
+
+.box {
+    position: fixed;
+    top: 225px;
+    right: 0px;
+    width: 15%;
+    padding: 10px;
+    border: 2px solid black;
+    border-right: none;
+    margin: 0;
+    background: white;
+	box-shadow: 0px 0px 50px 0px #FAE96F;
+}
+/* case des thèmes de la page cliquables */
+
+@media screen and (max-width:1000px) {
+    .box{
+		display:none;
+    }
+    /* ne s'affiche plus */
+
+	.corps {
+		width:100%;
+	}
+    /* contenu principale */
+}
+/* version mobile < 1000px */
+
+.none {
+	text-decoration: none;
+	color: black;
+}
+/* pas de soulignage du texte */

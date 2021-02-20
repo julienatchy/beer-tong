@@ -1,0 +1,51 @@
+.postule {
+    background-color: #333;
+    padding: 20px;
+}
+.contacter{
+    background-color: #333;
+    text-align: left;
+    border: 2px solid black;
+    padding: 15px;
+    padding-left: 30px;
+}
+input[type="text"], select, textarea {
+    font-family: Helvetica;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border: 2px solid black;
+}
+.pl {
+	height:200px;
+}
+
+.cardContact {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border: 2px solid black;
+    background-color: white;
+}
+
+label {
+    color: white;
+}
+
+.cardContactSubmit:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+input[type="date"] {
+    width: 100%;
+    border: none;
+    font-family: Helvetica;
+}

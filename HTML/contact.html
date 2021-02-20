@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Beer Tong - Nous contacter</title>
+	<link rel="icon" href="../Images/BT-logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../CSS/style-BT.css"/>
+	<link rel="stylesheet" href="../CSS/style-BT-produit.css"/>
+	<link rel="stylesheet" href="../CSS/style-BT-compa.css"/>
+	<link rel="stylesheet" href="../CSS/style-BT-contact.css"/>
+	<link rel="stylesheet" href="../CSS/style-BT-navbar.css"/>
+	<link rel="stylesheet" href="../CSS/style-BT-dropdown.css"/>
+</head>
+
+<body>
+
+<div id="hautPage" class="header">
+	<img src="../Images/BT-logo-complet.png" alt="Beer-Tong-logo">
+</div>
+
+<div class="topnav2 navbar menuBurger">
+	<a href="../index.html"><i class="fa fa-fw fa-home"></i></a> 
+	<input class="menu-btn" type="checkbox" id="menu-btn" />
+	<label class="menu-icon" for="menu-btn"><span class=""><i class="fa fa-bars"></i></span></label>
+	<div class="menu">
+		<a href="produit.html">Produit</a>	
+		<a class="active" href="contact.html">Contact</a> 
+		<a href="team.html">Equipe</a>
+		<a href="presse.html">Presse</a>
+		<a href="join.html">Nous rejoindre</a>
+		<a href="faq.html">FAQ</a>
+	</div>
+</div>
+
+<div class="navbar topnav menuNavbar">
+	<a href="../index.html"><i class="fa fa-fw fa-home"></i></a> 
+	<a href="produit.html">Produit</a>
+	<a class="active" href="contact.html">Contact</a> 
+	<a href="team.html">Equipe</a>
+	<a href="presse.html">Presse</a>
+	<div class="dropdown">
+		<a href="join.html" class="dropbtn noPad noBorder">Nous rejoindre</a>
+		<div class="dropdown-content">
+			<div class="dropInlineGrid">
+				<a href="joinCommercial.html">Commercial</a>
+				<a href="joinIngenieur.html">Ingénieur</a>
+				<a href="joinWebDesigner.html">Web-Designer</a>
+			</div>
+		</div>
+	</div>
+	<a href="faq.html">FAQ</a>
+</div>
+
+<div class="icon-bar">
+	<a href="https://www.youtube.com/watch?v=dx-e3o5ig6s" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a> 
+	<a href="https://www.youtube.com/watch?v=dx-e3o5ig6s" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a> 
+	<a href="https://www.youtube.com/watch?v=dx-e3o5ig6s" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a> 
+</div>
+
+<div class="icon-bar2">
+	<a href="#hautPage" class="arrow"><i class="fa fa-arrow-up"></i></a> 
+</div>
+
+<div class="corps">
+	<h2 class="centerT">Nous contacter</h2>
+	<p class="trait"></p>
+	<p>Veuillez remplir le formulaire ci-dessous si vous vous souhaitez nous contacter.</p>
+	<section>
+		<article>
+			<div class="postule contacter">
+				<form action="/action_page.php" method="post">
+					<label for="nom">Nom</label>
+					<input type="text" id="nom" name="nom" placeholder="Kujo" required pattern="[a-zA-Z][a-z]{1,20}">
+
+					<label for="prénom">Prénom</label>
+					<input type="text" id="prénom" name="prénom" placeholder="Jolyne" required pattern="[a-zA-Z][a-z]{1,20}">
+
+					<label for="age">Age</label>
+					<input type="text" id="age" name="age" placeholder="20" pattern="[1-9]{1,2}">
+					<!-- De 1 à 99 ans -->
+
+					<label for="ville">Ville</label>
+					<input type="text" id="ville" name="ville" placeholder="Morioh" required pattern="[a-zA-Z][a-z]{1,20}">
+
+					<label for="codeP">Code postal</label>
+					<input type="text" id="codeP" name="code-postal" placeholder="34000" required pattern="[0-9]{5}">
+
+					<label for="numTel">Numéro de téléphone</label>
+					<input type="text" id="numTel" name="numéro-téléphone" placeholder="0102030405" required pattern="(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}">
+					<!-- Prend en compte le +33 également -->
+
+					<label for="email">Votre Email</label>
+					<input type="text" id="email" name="email" placeholder="diegobrando@gmail.com" required pattern="[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}">
+					<label>Vous avez entendu parlé de nous via :</label>
+					<div class="cardContact">
+						<div><input type="checkbox" id="1" name="friends">Des amis</div>
+						<div><input type="checkbox" id="2" name="websites">De sites internets</div>
+						<div><input type="checkbox" id="3" name="none">Nulle part</div>
+					</div>
+			
+					<label for="country">Pays</label>
+					<select id="country" name="country">
+						<option value="none">Aucun pays sélectionné</option>
+						<option value="france">France</option>
+						<option value="suisse">Suisse</option>
+						<option value="belgique">Belgique</option>
+						<option value="canada">Canada</option>
+						<option value="autre">Autre</option>
+					</select>
+
+					<label for="describe">Informations supplémentaires</label>
+					<textarea id="describe" name="describe" placeholder="Donnez des détails de la raison pour laquelle vous nous contactez." class="pl" required></textarea>
+					
+					<label for="rdv">Rendez-vous (pas avant le 18 février 2019)</label>
+					<div class="cardContact">
+						<input type="date" id="rdv" name="rdv">
+					</div>
+
+					<input class="cardContact cardContactSubmit" type="submit" value="Soumettre">
+				</form>
+			</div>
+		</article>
+	</section>
+</div>
+
+<footer class="navbar">
+	<p>Site réalisé par ATCHY-DALAMA Julien, IKIOU Hamza et ACHALHI Ilyes - Groupe S4<p>
+	<!--<a href="#Remonter en haut de la page">Retour au début</a>-->
+</footer>
+
+</body>
+</html>

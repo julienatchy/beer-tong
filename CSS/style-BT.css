@@ -1,0 +1,355 @@
+* {
+	box-sizing: border-box;
+}
+
+body,html { 
+	font-family: Helvetica !important; /* !important assure la priorité en cas de conflit */
+	margin:0px;
+}
+
+body { 
+	/*background-image: url(../Images/test.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center 0px;*/
+	background-color: grey;
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=83424), auto !important;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background-image: url("../Images/fond.jpg");
+    background-position:center;
+    background-size: 100%;
+    color: black;
+    height: 120px;
+}
+
+.header h1 {
+	padding: 5px;
+	border: 2px solid black;
+	background-color: white;
+	width: 200px;
+	margin: auto;
+	border-radius: 30px;
+}
+
+.header img {
+	height: 100%;
+}
+
+
+.header p {
+	padding: 5px;
+	border: 2px solid black;
+	background-color: #FAE96F;
+	width: 300px;
+	margin: auto;
+	border-radius: 30px;
+	color: white;
+}
+
+footer {
+	text-align: center;
+	display: flex !important;
+	color: white;
+}
+
+.corps {
+	width:60%;
+    padding: 20px;
+    margin:auto;
+}
+
+@media screen and (max-width:700px) {
+    .corps{
+        width:100%;
+    }
+}
+
+.site-img {
+    background-color: grey;
+    width: 500px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.site-img2 {
+    background-color: grey;
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+@media screen and (max-width:1000px) {
+    .site-img {
+		width: 100%;
+	}
+	.site-img2 {
+		width: 100%;
+	}
+}
+
+.trait {
+	border:1px solid black;
+	margin-right:20%;
+	margin-left:20%;
+}
+
+.trait2 {
+	border:1px solid black;
+	margin-right:20px;
+	margin-left:20px;
+}
+
+.bouton {
+	background-color: white;
+	border: none;
+	color: black;
+	text-align: center;
+	font-size: 10px;
+	padding: 5px;
+	width: 120px;
+	height:30px;
+	transition: all 0.5s;
+	cursor: pointer;
+	border:2px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+}
+.bouton span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+.bouton:hover {
+	 background-color: black;
+	 color: white;
+}
+.bouton span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+.bouton:hover span {
+	padding-right: 25px;
+	color: white;
+}
+.bouton:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+@media screen and (max-width: 700px){
+	.box{
+		width: 70%;
+}
+	.popup{
+		width: 70%;
+	}
+}
+
+.navbar {
+	overflow: hidden; /* les autres éléments n'empiettent pas sur celui-ci */
+	position: sticky;
+	background-color: #333;
+	border-bottom:2px solid black;
+	border-top:2px solid black;
+	display:flex;
+	justify-content:center;
+	z-index: 10;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    display: inline-grid;
+    margin-bottom: -5px;
+  }
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    box-shadow: inset 2px 0 rgba(255,255,255,0.1),inset -1px 0 rgba(0,0,0,0.3);
+}
+
+.buttonav {
+	box-shadow: inset 2px 0 rgba(255,255,255,0.1),inset -1px 0 rgba(0,0,0,0.3);
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width:700px) {
+    .navbar{
+		width:100%;
+    }
+}
+
+.active {
+	background-color: black !important;
+	/*font-weight: bold;*/
+}
+
+/*.active {
+	background-color: black;
+	font-weight: bold;
+	padding: 30px !important;
+	border-radius: 100px;
+	background-color: #333;
+	color: white;
+	border: 2px solid black;
+}
+
+.flex {
+	display: flex;
+}*/
+
+.center {
+	margin:auto;
+}
+
+.centerT {
+	text-align:center;
+	padding:10px;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.noMar {
+	margin: 0px !important;
+}
+
+.noPad {
+	padding: 0px !important;
+}
+
+.noBorder {
+	border: none !important;
+}
+
+.padAll15 {
+	padding: 15px;
+}
+
+.padBot15 {
+	padding-bottom: 15px;
+}
+
+
+.marTop15 {
+	margin-top: 15px;
+}
+
+.icon-bar, .icon-bar2 {
+  position: fixed;
+  top: 225px;
+  border-bottom:2px solid black;
+  border-right:2px solid black;
+  border-top:2px solid black;
+  box-shadow: 0px 0px 50px 0px #FAE96F;
+  z-index: 100;
+}
+
+.icon-bar2 {
+  top: 445px !important;
+}
+
+@media screen and (max-width:700px) {
+    .icon-bar, .icon-bar2 {
+		display:none;
+    }
+	.icon-bar a, .icon-bar2 a {
+		display:none;
+	}
+}
+
+.icon-bar a, .icon-bar2 a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.8s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover, .icon-bar2 a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.arrow {
+	background: #333;
+	color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+
+.push {
+	padding-bottom:10px;
+}
+
+.flex {
+	display:flex;
+}
+
+@media screen and (max-width:1000px) {
+    .flex {
+		display:inline;
+	}
+}
+
+.inline {
+	display:inline;
+}
+
+.nopad {
+	padding:0px;
+}
+
+.nomar {
+	margin-top:0px;
+}
+
+.resize {
+	width: 200px;
+	margin-right:20px;
+}
+
+@media screen and (max-width:1000px) {
+    .resize {
+		width: 200px;
+		margin-right:0px;
+	}
+}
